@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b13"><meta name="description" content="DuyuScript — thư viện Roblox scripts, hướng dẫn và tiện ích được quản lý bởi cộng đồng.">
+  <meta property="og:title" content="DuyuScript — Roblox Script Hub"><meta property="og:description" content="Khám phá thư viện Roblox scripts, cập nhật mới và tiện ích."><meta property="og:type" content="website">
+  <title>DuyuScript — Roblox Script Hub</title><link rel="icon" href="https://i.pinimg.com/736x/80/f3/4e/80f34e318b785b3e1291e7ac978981db.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="noise"></div>
+  <header class="topbar"><a class="brand" href="#home"><img src="https://i.pinimg.com/736x/80/f3/4e/80f34e318b785b3e1291e7ac978981db.jpg" alt="DuyuScript"><span>DUYU<span class="accent">SCRIPT</span><small>ROBLOX SCRIPT HUB</small></span></a>
+    <nav><a href="#library">Thư viện</a><a href="#updates">Mới cập nhật</a><a href="#about">Giới thiệu</a></nav><div class="top-actions"><button id="musicBtn" class="icon-btn" title="Bật/tắt nhạc">♫ <span>Nhạc</span></button><button id="adminOpen" class="admin-btn">Admin <span>↗</span></button><button class="menu-btn" id="menuBtn" aria-label="Mở menu">☰</button></div>
+  </header>
+  <main id="home">
+    <section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><i></i> SCRIPT HUB • COMMUNITY</div><h1>YOUR NEXT<br><span>ROBLOX SCRIPT</span><br>STARTS HERE.</h1><p>Khám phá, lưu lại và chia sẻ những tiện ích Roblox hữu ích. Thư viện được cập nhật và kiểm duyệt thường xuyên.</p><div class="hero-actions"><a class="primary-btn" href="#library">Khám phá thư viện <b>↘</b></a><a class="ghost-btn" href="https://discord.gg/CwZh86ChvM" target="_blank" rel="noopener">Tham gia Discord ↗</a></div><div class="hero-metrics"><div><strong id="statScripts">—</strong><span>Scripts</span></div><div><strong id="statViews">—</strong><span>Lượt xem</span></div><div><strong id="statDownloads">—</strong><span>Lượt tải</span></div></div></div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-avatar"><img src="https://i.pinimg.com/736x/80/f3/4e/80f34e318b785b3e1291e7ac978981db.jpg" alt="DuyuScript avatar"></div><div class="float-tag tag-top">✦ CURATED SCRIPTS</div><div class="float-tag tag-bottom"><span class="pulse"></span> LIVE LIBRARY</div><div class="hero-glow"></div></div>
+    </section>
+    <section class="ticker"><div>DUYUSCRIPT <b>✳</b> ROBLOX SCRIPT HUB <b>✳</b> BUILT FOR THE COMMUNITY <b>✳</b> DUYUSCRIPT <b>✳</b> ROBLOX SCRIPT HUB <b>✳</b></div></section>
+    <section class="section wrap" id="library"><div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Script <span>Library.</span></h2><p>Tìm kiếm tiện ích phù hợp với trải nghiệm của bạn.</p></div><div class="result-count" id="resultCount">Đang tải thư viện...</div></div>
+      <div class="toolbar"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Tìm tên script, game hoặc từ khóa..."></label><select id="categoryFilter"><option value="all">Tất cả danh mục</option></select><select id="sortFilter"><option value="newest">Mới nhất</option><option value="popular">Phổ biến</option><option value="downloads">Tải nhiều</option><option value="rating">Đánh giá cao</option><option value="az">Tên A–Z</option></select></div>
+      <div class="chips" id="categoryChips"><button class="chip active" data-category="all">Tất cả</button></div><div class="script-grid" id="scriptGrid"><div class="loading-card">Đang tải dữ liệu thư viện...</div></div><div class="load-more-wrap"><button id="loadMore" class="ghost-btn hidden">Xem thêm scripts ↓</button></div>
+    </section>
+    <section class="section featured-section" id="updates"><div class="wrap"><div class="section-head"><div><div class="eyebrow">FRESH DROPS</div><h2>Latest <span>Updates.</span></h2><p>Những nội dung mới được thêm vào thư viện.</p></div><a href="#library" class="text-link">Xem toàn bộ ↗</a></div><div id="latestStrip" class="latest-strip"><div class="loading-card">Đang tải...</div></div></div></section>
+    <section class="section wrap about-section" id="about"><div class="about-mark">D<span>.</span></div><div><div class="eyebrow">ABOUT DUYUSCRIPT</div><h2>Made to explore.<br><span>Built to share.</span></h2><p>DuyuScript là thư viện tổng hợp các tiện ích và tài nguyên dành cho cộng đồng Roblox. Hãy đọc mô tả, kiểm tra nội dung trước khi sử dụng và chỉ chạy mã nguồn mà bạn hiểu rõ, có quyền sử dụng.</p><a class="ghost-btn" href="https://discord.gg/CwZh86ChvM" target="_blank" rel="noopener">Kết nối cộng đồng ↗</a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><img src="https://i.pinimg.com/736x/80/f3/4e/80f34e318b785b3e1291e7ac978981db.jpg" alt=""><b>DUYU<span>SCRIPT</span></b><p>Roblox Script Hub</p></div><div class="footer-links"><a href="https://discord.gg/CwZh86ChvM" target="_blank" rel="noopener">Discord ↗</a><a href="mailto:leeduy875@gmail.com">Gmail ↗</a></div><div class="copyright">© DuyuScript 2026.</div></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="detailModal"><article class="modal detail-modal"><button class="modal-close" data-close="detailModal">×</button><div id="detailContent"></div></article></div>
+  <div class="modal-backdrop" id="adminModal"><article class="modal admin-modal"><button class="modal-close" data-close="adminModal">×</button><div id="adminContent"></div></article></div>
+  <div class="modal-backdrop" id="reviewModal"><article class="modal review-modal"><button class="modal-close" data-close="reviewModal">×</button><div id="reviewContent"></div></article></div>
+  <audio id="bgAudio" loop preload="none"></audio>
+</body></html>
